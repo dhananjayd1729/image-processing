@@ -28,6 +28,10 @@ This repository is about processing images asynchronously and notifying a third 
   ```
 - Now start server with `npm start` command
 
+## LLD Diagram
+
+![Alt text](lld.drawio.png)
+
 
 ## Image Processing Service Interaction
 
