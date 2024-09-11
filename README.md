@@ -2,6 +2,33 @@
 
 This repository is about processing images asynchronously and notifying a third party when the processing is done.
 
+## Installation
+
+- Clone the project from GitHub
+  
+  ``
+  git clone <repository_url>  
+  ``
+- Go into folder
+  
+  ``
+  cd <repository_url> 
+  ``
+- Make sure you have nodejs and mongodb installed, if not install it first.
+  
+  ``
+  npm install
+  ``
+- add `.env.` file into root folder as well as create uploads folder to store your images. In .env file add your mongodb connection string and webhook url.
+  
+  ``
+      PORT=<port>
+      DB_CONNECTION_STRING=<your_mongo_db_connection_string>
+      WEBHOOK_URL=<your_webhook_url>
+  ``
+- Now start server with `npm start` command
+
+
 ## Image Processing Service Interaction
 
 - Get the CSV file of products from the client which will be having multiple images and will be parsed. Once server reads the CSV file it creates database entries for the same and processes images asynchronously. 
