@@ -48,11 +48,13 @@ This repository is about processing images asynchronously and notifying a third 
 
 ## API Endpoints
 
-- Upload API: 
+- Upload API:
+    - url: `localhost:<PORT>/api/upload`
     - method: `POST` 
     - request: CSV file
     - response: unique `requestID`
-- Status API: 
+- Status API:
+    - url: `localhost:<PORT>/api/status/:requestId`
     - method: `GET` 
     - request: `requestID` in params
     - response: Processing status for `requestID`
